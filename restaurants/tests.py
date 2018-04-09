@@ -7,7 +7,7 @@ class RestarantModelTestCase(TestCase):
         Restaurant.objects.create(
             name="Hamza's Pizza",
             description="Pizza that tastes really good.",
-            opening_time="00:01:00"
+            opening_time="00:01:00",
             closing_time="23:59:00"
             )
 
