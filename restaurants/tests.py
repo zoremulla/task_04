@@ -1,7 +1,17 @@
 from django.test import TestCase
 from django.urls import reverse
+from restaurants.models import Restaurant
 
-class BusinessViewTestCase(TestCase):
+class RestarantModelTestCase(TestCase):
+    def test_create(self):
+        Restaurant.objects.create(
+            name="Hamza's Pizza",
+            description="Pizza that tastes really good.",
+            opening_time="00:01:00"
+            closing_time="23:59:00"
+            )
+
+class RestaurantViewTestCase(TestCase):
     def test_welcome_view(self):
         url = reverse("hello-world")
         response = self.client.get(url)
