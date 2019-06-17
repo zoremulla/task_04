@@ -1,5 +1,5 @@
 1. Setup a virtual environment.
-2. Fork the repository for [Django Task 04](https://github.com/JoinCODED/task_04) in JoinCODED’s Github.
+2. Fork the repository.
 3. Clone the repository you just forked.
 4. Install the packages from the requirements file.
 5. Create a model called `Restaurant` with the following fields:
